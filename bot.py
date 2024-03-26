@@ -1,11 +1,11 @@
 #
 
-from pyrogram import filters
-from pyrogram import Client
+
+from pyrogram import Client, filters
 
 
 
-  Client = Client(
+  bot = Client(
         "GROUP-MEMBERS-BAN-BOT",
         bot_token=Config.BOT_TOKEN,
         api_id=Config.API_ID,
