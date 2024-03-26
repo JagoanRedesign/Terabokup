@@ -15,8 +15,8 @@ if __name__ == "__main__" :
 
     
     
-@Client.on.message(filters.command(start) & filters.private)
-def comand1(bot, message):
+@Client.on_message(filters.command(["start"]) & filters.private)
+async def start(bot, message):
     bot.send_message(message.chat.id, "hello i am a group admin bot")
 
 
