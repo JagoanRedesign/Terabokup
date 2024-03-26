@@ -15,10 +15,12 @@ if __name__ == "__main__" :
 
     
     
-@Client.on_message(filters.command(["start"]) & filters.private)
-async def start(bot, message):
-    bot.send_message(message.chat.id, "hello i am a group admin bot")
-
+@Client.on_message(filters.private & filters.command(["qr_code"]))
+async def qr_code(client, message):
+    await message.reply_caption(
+       #photo=Config.QR_PIC,
+       caption=f"""hello i am admin bot"""
+    )
 
     print("🎊 I AM ALIVE 🎊")
     bot.run()
