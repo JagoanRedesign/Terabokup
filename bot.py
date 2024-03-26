@@ -3,6 +3,7 @@
 
 from pyrogram import Client as Ntbots
 from pyrogram import filters
+from config import Config
 
 
   Ntbots = Ntbots(
