@@ -13,15 +13,6 @@ if __name__ == "__main__" :
         api_id=Config.API_ID,
         api_hash=Config.API_HASH)
 
-    
-    
-@Client.on_message(filters.private & filters.command(["qr_code"]))
-async def qr_code(client, message):
-    await message.reply_caption(
-       #photo=Config.QR_PIC,
-       caption=f"""hello i am admin bot"""
-    )
-
     print("🎊 I AM ALIVE 🎊")
     bot.run()
     
