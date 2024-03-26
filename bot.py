@@ -5,8 +5,7 @@ from pyrogram import Client
 
 
 
-
-    bot = Client(
+  Client = Client(
         "GROUP-MEMBERS-BAN-BOT",
         bot_token=Config.BOT_TOKEN,
         api_id=Config.API_ID,
