@@ -6,7 +6,7 @@ from pyrogram import filters
 from config import Config
 
 
-  Ntbots = Ntbots(
+  Ntbots=Ntbots(
        "GROUP-MEMBERS-BAN-BOT",
         bot_token=Config.BOT_TOKEN,
         api_id=Config.API_ID,
