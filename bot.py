@@ -13,6 +13,6 @@ if __name__ == "__main__" :
         api_id=Config.API_ID,
         api_hash=Config.API_HASH)
 
-    print("🎊 I AM ALIVE 🎊")
-    bot.run()
+     print("🎊 I AM ALIVE 🎊")
+     bot.run()
     
