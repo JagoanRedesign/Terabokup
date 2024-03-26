@@ -5,6 +5,8 @@ from pyrogram import Client, filters
 from config import Config
 
 
+if __name__ == "__main__" :
+
     bot = Client(
         "MembersBan_Bot",
         bot_token=Config.BOT_TOKEN,
