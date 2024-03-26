@@ -6,10 +6,10 @@ from config import Config
 
 
   bot = Client(
-       "GROUP-MEMBERS-BAN-BOT",
-        bot_token=Config.BOT_TOKEN,
-        api_id=Config.API_ID,
-        api_hash=Config.API_HASH)
+       "MembersBan_Bot",
+        bot_token = Config.BOT_TOKEN,
+        api_id = Config.API_ID,
+        api_hash = Config.API_HASH)
 
     
     
