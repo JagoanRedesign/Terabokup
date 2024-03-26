@@ -14,4 +14,9 @@ from pyrogram import Client
 
     print("🎊 I AM ALIVE 🎊")
 
+
+@Client.on.message(filters.command(start) & filters.private)
+def comand1(Client, message):
+    bot.send_message(message.chat.id, "hello i am a group admin bot")
+
     Client.run()
