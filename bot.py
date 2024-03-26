@@ -5,11 +5,11 @@ from pyrogram import Client, filters
 from config import Config
 
 
-  bot = client(
-       "MembersBan_Bot",
-        bot_token = Config.BOT_TOKEN,
-        api_id = Config.API_ID,
-        api_hash = Config.API_HASH)
+    bot = Client(
+        "MembersBan_Bot",
+        bot_token=Config.BOT_TOKEN,
+        api_id=Config.API_ID,
+        api_hash=Config.API_HASH)
 
     
     
