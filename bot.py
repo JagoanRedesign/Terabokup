@@ -31,7 +31,7 @@ async def start(Client, message):
           InlineKeyboardButton('𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩', url='https://t.me/NT_BOTS_SUPPORT'),
           ],
           [
-          InlineKeyboardButton('⛔️ 𝐂𝐋𝐎𝐒𝐄', callback_data='close')
+          InlineKeyboardButton('⛔️ 𝐂𝐋𝐎𝐒𝐄', callback_data='cancel')
         ]  
       ]
      ),
