@@ -4,9 +4,9 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ForceReply
 
 
-API_ID = "4888076"
-API_HASH = "8b9b8214d84305d5ba8042c93575ea84"
-BOT_TOKEN = "6986631333:AAHJ1THDOYeWasJfJ58ARCmlyGcyCB2GPO8"
+API_ID = "4888076" # use your api id
+API_HASH = "8b9b8214d84305d5ba8042c93575ea84" # use your api hash
+BOT_TOKEN = "6986631333:AAHJ1THDOYeWasJfJ58ARCmlyGcyCB2GPO8" # use your bot token
 ABOUT_TXT = """
 ╭───────────⍟
 ├📛 **My Name** : <a href=https://t.me/MembersBan_Bot>Admin</a>
@@ -36,6 +36,7 @@ bot = Client(
     bot_token=BOT_TOKEN
 )
 
+# delete button
 @bot.on_callback_query(filters.regex('cancel'))
 async def cancel(bot,update):
 	try:
@@ -43,7 +44,7 @@ async def cancel(bot,update):
 	except:
 		return
 
-
+# start message
 @bot.on_message(filters.private & filters.command(["start"]))
 async def start(Client, message):
     await message.reply_photo(
@@ -64,12 +65,13 @@ async def start(Client, message):
       ]
      ),
    )
-
+	
+# help message
 @bot.on_message(filters.private & filters.command(["help"]))
 async def help(Client, message):
     await message.reply_text("**I AM NOT A FULLY GROUP ADMIN BOT**\n\n**Admin commands:** 👇🏻\n• /ban **Ban a user.**\n• /unban **Unban a user.**\n• /mute **Mute a user.**\n• /unmute **Unmute a user.**\n")
 
-
+# about message
 @bot.on_message(filters.private & filters.command(["about"]))
 async def about(Client, message):
     await message.reply_text(ABOUT_TXT, reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton(text='⛔️ CLOSE', callback_data='cancel') ] ] ) )
