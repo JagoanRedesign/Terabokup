@@ -7,7 +7,25 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ForceRepl
 API_ID = "4888076"
 API_HASH = "8b9b8214d84305d5ba8042c93575ea84"
 BOT_TOKEN = "6101898707:AAEJnCfLSVcYWmju-bNrJRjHhm-UhzK03DI"
-
+ABOUT_TXT = """
+╭───────────⍟
+├📛 **My Name** : <a href=https://t.me/Fast_Rename_Bot>Rename Bot V3.1.0 🚀</a>
+│
+├📢 **Framework** : <a href=https://docs.pyrogram.org/>Pyrogram 2.0.106</a>
+│
+├💮 **Language** : <a href=https://www.python.org>Python 3.12.2</a>
+│
+├💾 **Database** : <a href=https://cloud.mongodb.com>MongoDB</a>
+│
+├👥 **Support Group** : <a href=https://t.me/NT_BOTS_SUPPORT>NT BOTS SUPPORT</a>
+│
+├🥏 **Channel** : <a href=https://t.me/NT_BOT_CHANNEL>NT BOT CHANNEL</a>
+│
+├🤖 **Server** : <a href=https://fly.io>Fly Paid</a>
+│
+├👩‍💻 **Developer** : @LISA_FAN_LK
+╰───────────────⍟
+"""
 
 
 
@@ -51,6 +69,13 @@ async def start(Client, message):
 async def help(Client, message):
     await message.reply_text("**I AM NOT A FULLY GROUP ADMIN BOT**\n\n**Admin commands:** 👇🏻\n• /ban **Ban a user.**\n• /unban **Unban a user.**\n• /mute **Mute a user.**\n• /unmute **Unmute a user.**\n")
 
+
+@bot.on_message(filters.private & filters.command(["about"]))
+async def about(Client, message):
+    await bot.send_message(
+          chat_id=update.chat.id,
+          text=ABOUT_TXT,  
+          reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton(text='⛔️ CLOSE', callback_data='cancel') ] ] ) )
 
 
 
