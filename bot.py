@@ -7,7 +7,7 @@
 
 from pyrogram import Client, filters
 
-
+if __name__ == "__main__" :
 
     bot = Client(
         "MembersBan_Bot",
