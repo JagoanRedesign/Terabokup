@@ -21,7 +21,7 @@ if __name__ == "__main__" :
         api_id=Config.API_ID,
         api_hash=Config.API_HASH)
 
-        print("🎊 I AM ALIVE 🎊")
+        #print("🎊 I AM ALIVE 🎊")
 
 
 @Client.on_message(filters.private & filters.command(["start"]))
