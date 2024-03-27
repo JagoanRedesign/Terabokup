@@ -72,10 +72,7 @@ async def help(Client, message):
 
 @bot.on_message(filters.private & filters.command(["about"]))
 async def about(Client, message):
-    await bot.send_message(
-          #chat_id=update.chat.id,
-          text=ABOUT_TXT,  
-          reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton(text='⛔️ CLOSE', callback_data='cancel') ] ] ) )
+    await message.reply_text(ABOUT_TXT, reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton(text='⛔️ CLOSE', callback_data='cancel') ] ] ) )
 
 
 
