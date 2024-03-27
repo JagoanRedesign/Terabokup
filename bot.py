@@ -19,7 +19,8 @@ bot = Client(
 async def start(Client, message):
     await message.reply_photo(
         photo="https://graph.org/file/a5d4da221c8f34319318d.jpg",
-        caption="hello 👋,\n\n**I Am group Admin Bot**")
+        caption="hello **{}**👋,\n\n**I Am group Admin Bot**".format(update.from_user.mention)
+    )
     
 
 @bot.on_message(filters.private & filters.command(["help"]))
