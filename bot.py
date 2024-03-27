@@ -22,7 +22,7 @@ if __name__ == "__main__" :
         api_hash=Config.API_HASH)
 
         #print("🎊 I AM ALIVE 🎊")
-
+        bot.run()
 
 @Client.on_message(filters.private & filters.command(["start"]))
 async def start(client, message):
@@ -30,5 +30,5 @@ async def start(client, message):
        caption=f"""hello im admin bot"""
     )
 
-     bot.run()
+     
     
