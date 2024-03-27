@@ -15,6 +15,17 @@ bot = Client(
 )
 
 
+@bot.on_message(filters.private & filters.command(["start"]))
+async def start(Client, message):
+    await message.reply_text("hello,\nI Am group Admin Bot")
+    
+
+@bot.on_message(filters.private & filters.command(["help"]))
+async def help(Client, message):
+    await message.reply_text("I AM NOT A FULLY GROUP ADMIN BOT\nI'M ONLY BAN UNBAN MUTE UNMUTE BOT")
+
+
+
 print("🎊 I AM ALIVE 🎊")
 
 bot.run()
