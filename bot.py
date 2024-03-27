@@ -29,14 +29,13 @@ async def start(Client, message):
       [
           InlineKeyboardButton('👨‍💻 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫', url='https://t.me/yeah_new'),
           InlineKeyboardButton('𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩', url='https://t.me/NT_BOTS_SUPPORT'),
-          ]
+          ],
           [
           InlineKeyboardButton('⛔️ 𝐂𝐋𝐎𝐒𝐄', callback_data='close')
-        ]
-        
-        ]
-      ),
-    )
+        ]  
+      ]
+     ),
+   )
 
 @bot.on_message(filters.private & filters.command(["help"]))
 async def help(Client, message):
