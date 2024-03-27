@@ -1,6 +1,4 @@
-#
-
-
+# Hello, this bot coding not complete
 
 from pyrogram import Client, filters
 
