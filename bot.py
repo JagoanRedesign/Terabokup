@@ -47,7 +47,7 @@ async def help(Client, message):
 async def cancel(bot,update):
 	try:
 		await update.message.delete()
-	#except:
+	except:
 		#return
 
 
