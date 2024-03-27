@@ -9,7 +9,7 @@ API_HASH = "8b9b8214d84305d5ba8042c93575ea84"
 BOT_TOKEN = "6101898707:AAEJnCfLSVcYWmju-bNrJRjHhm-UhzK03DI"
 ABOUT_TXT = """
 ╭───────────⍟
-├📛 **My Name** : <a href=https://t.me/Fast_Rename_Bot>Rename Bot V3.1.0 🚀</a>
+├📛 **My Name** : <a href=https://t.me/MembersBan_Bot>Admin</a>
 │
 ├📢 **Framework** : <a href=https://docs.pyrogram.org/>Pyrogram 2.0.106</a>
 │
@@ -23,7 +23,7 @@ ABOUT_TXT = """
 │
 ├🤖 **Server** : <a href=https://fly.io>Fly Paid</a>
 │
-├👩‍💻 **Developer** : @LISA_FAN_LK
+├🎓 **Developer** : @yeah_new | @LISA_FAN_LK
 ╰───────────────⍟
 """
 
