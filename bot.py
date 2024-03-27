@@ -7,7 +7,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ForceRepl
 API_ID = "4888076"
 API_HASH = "8b9b8214d84305d5ba8042c93575ea84"
 BOT_TOKEN = "6101898707:AAEJnCfLSVcYWmju-bNrJRjHhm-UhzK03DI"
-ADMIN = "1834908260"
+
 
 
 
@@ -51,12 +51,6 @@ async def start(Client, message):
 async def help(Client, message):
     await message.reply_text("**I AM NOT A FULLY GROUP ADMIN BOT**\n\n**Admin commands:** 👇🏻\n• /ban **Ban a user.**\n• /unban **Unban a user.**\n• /mute **Mute a user.**\n• /unmute **Unmute a user.**\n")
 
-
-
-@bot.on_message(filters.private & filters.user(ADMIN) & filters.command(["ban"]))
-async def ban(Client, message):
-    bot.kick_chat_member(message.chat.id, message.reply_to_message.from_user.id)
-    bot.send_message(message.chat.id, f"{message.reply_to_message.from_user.mention} Banned!")
 
 
 
