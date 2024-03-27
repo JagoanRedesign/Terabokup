@@ -7,6 +7,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ForceRepl
 API_ID = "4888076" # use your api id
 API_HASH = "8b9b8214d84305d5ba8042c93575ea84" # use your api hash
 BOT_TOKEN = "6986631333:AAHJ1THDOYeWasJfJ58ARCmlyGcyCB2GPO8" # use your bot token
+START_TXT = "𝐇𝐞𝐥𝐥𝐨 **{}** 👋\n\n𝐈 𝐀𝐌 𝐆𝐫𝐨𝐮𝐩 𝐀𝐝𝐦𝐢𝐧 𝐁𝐨𝐭\n\n**𝐈’𝐦 𝐍𝐨𝐭 𝐀 𝐅𝐮𝐥𝐥𝐲 𝐆𝐫𝐨𝐮𝐩 𝐀𝐝𝐦𝐢𝐧 𝐁𝐨𝐭. 𝐖𝐢𝐭𝐡 𝐌𝐞 𝐘𝐨𝐮 𝐂𝐚𝐧 𝐛𝐚𝐧, 𝐮𝐧𝐛𝐚𝐧, 𝐦𝐮𝐭𝐞, 𝐮𝐧𝐦𝐮𝐭𝐞**"
 ABOUT_TXT = """
 ╭───────────⍟
 ├📛 **My Name** : <a href=https://t.me/MembersBan_Bot>Admin</a>
@@ -49,7 +50,7 @@ async def cancel(bot,update):
 async def start(Client, message):
     await message.reply_photo(
         photo="https://graph.org/file/a5d4da221c8f34319318d.jpg",
-        caption="𝐇𝐞𝐥𝐥𝐨 👋\n\n𝐈 𝐀𝐌 𝐆𝐫𝐨𝐮𝐩 𝐀𝐝𝐦𝐢𝐧 𝐁𝐨𝐭\n\n**𝐈’𝐦 𝐍𝐨𝐭 𝐀 𝐅𝐮𝐥𝐥𝐲 𝐆𝐫𝐨𝐮𝐩 𝐀𝐝𝐦𝐢𝐧 𝐁𝐨𝐭. 𝐖𝐢𝐭𝐡 𝐌𝐞 𝐘𝐨𝐮 𝐂𝐚𝐧 𝐛𝐚𝐧, 𝐮𝐧𝐛𝐚𝐧, 𝐦𝐮𝐭𝐞, 𝐮𝐧𝐦𝐮𝐭𝐞**",
+        caption=START_TXT.format(update.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
         [
           [
