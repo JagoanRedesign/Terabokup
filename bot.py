@@ -3,17 +3,12 @@
 
 
 
-import logging
-logging.basicConfig(level=logging.DEBUG,
-                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-logger = logging.getLogger(__name__)
+
 
 from pyrogram import Client, filters
 from config import Config
-logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 
-if __name__ == "__main__" :
 
     Client = Client(
         "MembersBan_Bot",
