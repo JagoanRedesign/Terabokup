@@ -6,7 +6,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ForceRepl
 
 API_ID = "4888076"
 API_HASH = "8b9b8214d84305d5ba8042c93575ea84"
-BOT_TOKEN = "6101898707:AAEJnCfLSVcYWmju-bNrJRjHhm-UhzK03DI"
+BOT_TOKEN = "6986631333:AAHJ1THDOYeWasJfJ58ARCmlyGcyCB2GPO8"
 ABOUT_TXT = """
 ╭───────────⍟
 ├📛 **My Name** : <a href=https://t.me/MembersBan_Bot>Admin</a>
