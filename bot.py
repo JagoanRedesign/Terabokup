@@ -15,14 +15,14 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 if __name__ == "__main__" :
 
-    bot = Client(
+    Client = Client(
         "MembersBan_Bot",
         bot_token=Config.BOT_TOKEN,
         api_id=Config.API_ID,
         api_hash=Config.API_HASH)
 
         #print("🎊 I AM ALIVE 🎊")
-        bot.run()
+        Client.run()
 
 @Client.on_message(filters.private & filters.command(["start"]))
 async def start(client, message):
