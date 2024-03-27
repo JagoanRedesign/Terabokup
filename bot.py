@@ -17,12 +17,12 @@ bot = Client(
 
 @bot.on_message(filters.private & filters.command(["start"]))
 async def start(Client, message):
-    await message.reply_text("hello,\nI Am group Admin Bot")
+    await message.reply_text("hello 👋,\n\n**I Am group Admin Bot**")
     
 
 @bot.on_message(filters.private & filters.command(["help"]))
 async def help(Client, message):
-    await message.reply_text("I AM NOT A FULLY GROUP ADMIN BOT\nI'M ONLY BAN UNBAN MUTE UNMUTE BOT")
+    await message.reply_text("**I AM NOT A FULLY GROUP ADMIN BOT**\n\n**MY COMMAND** 👇🏻\n /BAN /UNBAN /MUTE /UNMUTE")
 
 
 
