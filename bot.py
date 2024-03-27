@@ -15,6 +15,13 @@ bot = Client(
     bot_token=BOT_TOKEN
 )
 
+@bot.on_callback_query(filters.regex('cancel'))
+async def cancel(bot,update):
+	try:
+		await update.message.delete()
+	except:
+		return
+
 
 @bot.on_message(filters.private & filters.command(["start"]))
 async def start(Client, message):
@@ -43,12 +50,7 @@ async def help(Client, message):
 
 
 
-@bot.on_callback_query(filters.regex('cancel'))
-async def cancel(bot,update):
-	try:
-		await update.message.delete()
-	except:
-		#return
+
 
 
 
