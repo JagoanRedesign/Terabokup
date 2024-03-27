@@ -7,7 +7,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ForceRepl
 API_ID = "4888076"
 API_HASH = "8b9b8214d84305d5ba8042c93575ea84"
 BOT_TOKEN = "6101898707:AAEJnCfLSVcYWmju-bNrJRjHhm-UhzK03DI"
-GROUP = "NT_BOTS_SUPPORT"
+GROUP = "hellllllllllllllllllllddkdk"
 WELCOME_MESSAGE = "𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐍𝐓 𝐁𝐨𝐭𝐬 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩"
 
 
