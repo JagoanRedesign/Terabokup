@@ -13,6 +13,15 @@ if __name__ == "__main__" :
         api_id=Config.API_ID,
         api_hash=Config.API_HASH)
 
+
+
+
+@Client.on_message(filters.private & filters.command(["start"]))
+async def start(client, message):
+    await message.reply_text(
+       caption=f"""QR CODE"""
+    )
+
      print("🎊 I AM ALIVE 🎊")
      bot.run()
     
