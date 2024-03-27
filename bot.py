@@ -43,7 +43,7 @@ async def help(Client, message):
 
 
 
-@Client.on_callback_query(filters.regex('cancel'))
+@bot.on_callback_query(filters.regex('cancel'))
 async def cancel(bot,update):
 	try:
 		await update.message.delete()
