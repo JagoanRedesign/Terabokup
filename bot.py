@@ -49,13 +49,13 @@ async def start(Client, message):
    )
 
 @bot.on_message(filters.private & filters.command(["help"]))
-def help(Client, message):
+async def help(Client, message):
     await message.reply_text("**I AM NOT A FULLY GROUP ADMIN BOT**\n\n**Admin commands:** 👇🏻\n• /ban **Ban a user.**\n• /unban **Unban a user.**\n• /mute **Mute a user.**\n• /unmute **Unmute a user.**\n")
 
 
 
 @bot.on_message(filters.chat(GROUP) & filters.new_chat_members)
-async def welcome(Client, messgae):
+def welcome(Client, messgae):
 	message.reply_text(WELCOME_MESSAGE)
 
 
