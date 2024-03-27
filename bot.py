@@ -28,11 +28,10 @@ async def start(Client, message):
       ],
       [
           InlineKeyboardButton('👨‍💻 DEVELOPER', url='https://t.me/LISA_FAN_LK'),
-          InlineKeyboardButton('🌝 SOURCE', url='https://github.com/LISA-KOREA/UPLOADER-BOT-V2'),
+          InlineKeyboardButton('🌝 SOURCE', url='https://github.com/LISA-KOREA/UPLOADER-BOT-V2')
           ]
         ]
       ),
-      reply_to_message_id=update.message_id
     )
 
 @bot.on_message(filters.private & filters.command(["help"]))
