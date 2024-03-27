@@ -22,7 +22,7 @@ async def start(Client, message):
 
 @bot.on_message(filters.private & filters.command(["help"]))
 async def help(Client, message):
-    await message.reply_text("**I AM NOT A FULLY GROUP ADMIN BOT**\n\n**MY COMMAND** 👇🏻\n /BAN /UNBAN /MUTE /UNMUTE")
+    await message.reply_text("**I AM NOT A FULLY GROUP ADMIN BOT**\n\n**Admin commands:** 👇🏻\n /ban **Ban a user.**\n /unban **Unban a user.**\n /mute **Mute a user.**\n /unmute **Unmute a user.**\n")
 
 
 
