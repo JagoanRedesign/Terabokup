@@ -54,7 +54,7 @@ async def help(Client, message):
 
 
 @bot.on_message(filters.private & filters.command(["ban"]))
-async def ban(Client, message):
+def ban(Client, message):
     bot.kick_chat_member(message.chat.id, message.reply_to_message.from_user.id)
     bot.send_message(message.chat.id, f"{message.reply_to_message.from_user.mention} Banned!")
 
