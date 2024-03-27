@@ -1,6 +1,7 @@
 # Hello, this bot coding not complete
 
 from pyrogram import Client, filters
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
 API_ID = "4888076"
@@ -19,8 +20,20 @@ bot = Client(
 async def start(Client, message):
     await message.reply_photo(
         photo="https://graph.org/file/a5d4da221c8f34319318d.jpg",
-        caption="𝐇𝐞𝐥𝐥𝐨 👋\n\n𝐈 𝐀𝐌 𝐆𝐫𝐨𝐮𝐩 𝐀𝐝𝐦𝐢𝐧 𝐁𝐨𝐭\n\n**𝐈’𝐦 𝐍𝐨𝐭 𝐀 𝐅𝐮𝐥𝐥𝐲 𝐆𝐫𝐨𝐮𝐩 𝐀𝐝𝐦𝐢𝐧 𝐁𝐨𝐭. 𝐖𝐢𝐭𝐡 𝐌𝐞 𝐘𝐨𝐮 𝐂𝐚𝐧 𝐛𝐚𝐧, 𝐮𝐧𝐛𝐚𝐧, 𝐦𝐮𝐭𝐞, 𝐮𝐧𝐦𝐮𝐭𝐞**")
-    
+        caption="𝐇𝐞𝐥𝐥𝐨 👋\n\n𝐈 𝐀𝐌 𝐆𝐫𝐨𝐮𝐩 𝐀𝐝𝐦𝐢𝐧 𝐁𝐨𝐭\n\n**𝐈’𝐦 𝐍𝐨𝐭 𝐀 𝐅𝐮𝐥𝐥𝐲 𝐆𝐫𝐨𝐮𝐩 𝐀𝐝𝐦𝐢𝐧 𝐁𝐨𝐭. 𝐖𝐢𝐭𝐡 𝐌𝐞 𝐘𝐨𝐮 𝐂𝐚𝐧 𝐛𝐚𝐧, 𝐮𝐧𝐛𝐚𝐧, 𝐦𝐮𝐭𝐞, 𝐮𝐧𝐦𝐮𝐭𝐞**",
+        reply_markup=InlineKeyboardMarkup(
+        [
+          [
+          InlineKeyboardButton('📍 CHANNEL', url='https://t.me/NT_BOT_CHANNEL'),
+      ],
+      [
+          InlineKeyboardButton('👨‍💻 DEVELOPER', url='https://t.me/LISA_FAN_LK'),
+          InlineKeyboardButton('🌝 SOURCE', url='https://github.com/LISA-KOREA/UPLOADER-BOT-V2'),
+          ]
+        ]
+      ),
+      reply_to_message_id=update.message_id
+    )
 
 @bot.on_message(filters.private & filters.command(["help"]))
 async def help(Client, message):
