@@ -1,7 +1,7 @@
 # Hello, this bot coding not complete
 
 from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ForceReply
 
 
 API_ID = "4888076"
@@ -40,6 +40,16 @@ async def start(Client, message):
 @bot.on_message(filters.private & filters.command(["help"]))
 async def help(Client, message):
     await message.reply_text("**I AM NOT A FULLY GROUP ADMIN BOT**\n\n**Admin commands:** 👇🏻\n• /ban **Ban a user.**\n• /unban **Unban a user.**\n• /mute **Mute a user.**\n• /unmute **Unmute a user.**\n")
+
+
+
+@Client.on_callback_query(filters.regex('cancel'))
+async def cancel(bot,update):
+	try:
+		await update.message.delete()
+	except:
+		return
+
 
 
 
