@@ -50,6 +50,7 @@ async def cancel(bot,update):
 async def start(Client, message):
     await message.reply_photo(
         photo="https://graph.org/file/a5d4da221c8f34319318d.jpg",
+        chat_id=update.chat.id,
         caption=START_TXT.format(update.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
         [
