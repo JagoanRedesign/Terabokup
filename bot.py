@@ -47,10 +47,9 @@ async def cancel(bot,update):
 
 # start message
 @bot.on_message(filters.private & filters.command(["start"]))
-async def start(Client, message):
+async def start(Client, update):
     await message.reply_photo(
         photo="https://graph.org/file/a5d4da221c8f34319318d.jpg",
-        chat_id=update.chat.id,
         caption=START_TXT.format(update.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
         [
