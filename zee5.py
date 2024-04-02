@@ -3,8 +3,7 @@ import requests
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-# Initialize the Telegram bot
-bot = Client("zee5_upload_bot")
+
 
 # Define the command handler
 @bot.on_message(filters.command("start"))
@@ -45,5 +44,3 @@ def download_zee5_video(url):
     else:
         return None
 
-# Start the bot
-bot.run()
