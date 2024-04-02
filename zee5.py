@@ -6,9 +6,9 @@ from pyrogram.types import Message
 
 
 # Define the command handler
-@bot.on_message(filters.command("start"))
-async def start(bot, message):
-    await message.reply_text("Welcome to the ZEE5 Upload Bot! Send me a ZEE5 video URL and I'll upload it to Telegram.")
+#@bot.on_message(filters.command("start"))
+#async def start(bot, message):
+    #await message.reply_text("Welcome to the ZEE5 Upload Bot! Send me a ZEE5 video URL and I'll upload it to Telegram.")
 
 # Define the ZEE5 URL handler
 @bot.on_message(filters.regex(r"(https?://(?:www\.)?zee5\.com/.+)"))
